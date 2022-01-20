@@ -7,12 +7,15 @@
  It will keep track of the points obtain and add or rest  from the round
 
  ## Atrributes 
-
+   pointScore
+   pointAvailable
  ## Functions
-
+ 
+  
 # Director 
 
 ## Attributes
+  newRound ()
 
 ## Functions 
 .
