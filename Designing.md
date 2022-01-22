@@ -5,7 +5,7 @@ Hilo is a game in which the player guesses if the next card drawn by the dealer 
 
 # Classes:
 
-## Game Clase
+## Game Class
  it will initiate the new instance of the game. 
 
 ### Attributes
