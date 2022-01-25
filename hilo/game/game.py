@@ -23,8 +23,8 @@ class Game:
         self.total_score = 0
 
          
-        # die = Die()
-        # self.card.append(die)
+        # game_over = Over()
+        # self.card.append(game_over)
 
     def start_game(self):
         """Starts the game by running the main game loop.
