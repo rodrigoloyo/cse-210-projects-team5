@@ -1,5 +1,5 @@
 # from game.gameOver import  #pending
-
+import random
 
 class Game:
     """The blueprint who directs the game. 
@@ -33,10 +33,16 @@ class Game:
             self (Game): an instance of Game.
         """
         while self.is_playing:
+            self.display_card()
             self.get_inputs()
+            self.display_card()
             # self.do_updates()
             # self.do_outputs()
             self.get_inputs1()
+    def display_card(self):
+
+        new_card = self.card.pop(random.randrange(len(self.card)))
+        print(new_card)
 
     def get_inputs(self):
         """Ask the user to guess next card if higher or lower
