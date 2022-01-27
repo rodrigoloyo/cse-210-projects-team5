@@ -56,6 +56,9 @@ class Game:
             self (Game): An instance of Game.
 
         """
+        print("this is the current card")
+        print(self.current_card)
+       
         guess_card = input("Higher or lower? [h/l]  ")
 
         self.guess = guess_card
@@ -68,6 +71,8 @@ class Game:
            
 
     def get_inputs1(self):
+    
+       
         new_round = input("Play again [y/n] ")
         self.is_playing = (new_round == "y")
 
@@ -77,19 +82,18 @@ class Game:
         Args:
             self (Game): An instance of Game.
         """
-        print("this is the current card")
-        print(self.current_card)
         print("this is the new  card")
         print(self.new_card)
-       
         if self.new_card > self.current_card:
             if  self.guess == "h":
                self.score += 100
         if self.new_card < self.current_card:
             if  self.guess == "l":
                self.score += 100
-            self.score -= 100
-            
+        else:
+              self.score -= 100        
+           
+
         self.current_card = self.new_card
         
 
