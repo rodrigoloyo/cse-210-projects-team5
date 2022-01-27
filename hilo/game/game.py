@@ -4,14 +4,9 @@ import random
 class Game:
     """A person who directs the game. 
 
-    The responsibility of a Game is to control the sequence of play.
+    The responsibility of a Game is to control the sequence of play. """
 
-    Attributes:
-        dice (List[Die]): A list of Die instances.
-        is_playing (boolean): Whether or not the game is being played.
-        score (int): The score for one round of play.
-        total_score (int): The score for the entire game.
-    """
+    
 
     def __init__(self):
         """Constructs a new Game.
@@ -44,13 +39,10 @@ class Game:
             self.do_outputs()
             self.get_inputs1()
 
-    # def display_card1(self):
-
-    #     new_card = int(self.card.pop(random.randrange(len(self.card))))
-    #     return new_card
+     
 
     def get_inputs(self):
-        """Ask the user if they want to roll.
+        """Ask the user  for higher or lower choice.
 
         Args:
             self (Game): An instance of Game.
@@ -102,7 +94,7 @@ class Game:
         
 
     def do_outputs(self):
-        """Displays the dice and the score. Also asks the player if they want to roll again. 
+        """Displays  the score. Also asks the player if they want to play again. 
 
         Args:
             self (Game): An instance of Game.
