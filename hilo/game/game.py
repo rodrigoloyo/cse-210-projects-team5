@@ -86,12 +86,16 @@ class Game:
         print(self.new_card)
         if self.new_card > self.current_card:
             if  self.guess == "h":
-               self.score += 100
+                self.score += 100
+            else: 
+                 self.score -= 100
         if self.new_card < self.current_card:
             if  self.guess == "l":
-               self.score += 100
-        else:
-              self.score -= 100        
+                self.score += 100
+
+            else: 
+                 self.score -= 100
+            
            
 
         self.current_card = self.new_card
